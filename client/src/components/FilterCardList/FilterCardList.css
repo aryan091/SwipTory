@@ -57,7 +57,8 @@
 
   .filter-card-list {
     justify-content: flex-start; /* Align items to the start */
-    overflow-x: hidden; 
+    overflow-x: auto;
+    overflow-y: hidden; 
     white-space: nowrap; 
   }
 

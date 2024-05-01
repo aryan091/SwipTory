@@ -255,11 +255,11 @@ const SliderModal = ({ onClose }) => {
                 onError={(e) => (e.target.style.display = "none")}
               />
             )}
-            <div className="categoryStoryContent">
-              <div className="categoryStoryHeader">
+            <div className="categoryStoryContentSlider">
+              <div className="categoryStoryHeaderSlider">
                 {currentSlide && currentSlide.heading}
               </div>
-              <div className="categoryStoryDescription">
+              <div className="categoryStoryDescriptionSlider">
                 {currentSlide && currentSlide.description}
               </div>
               <div>

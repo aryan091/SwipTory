@@ -121,7 +121,7 @@ position: relative;
   }
   
   /* CSS for categoryStoryContent */
-.categoryStoryContent {
+.categoryStoryContentSlider {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -132,7 +132,7 @@ position: relative;
 }
 
 /* CSS for categoryStoryHeader */
-.categoryStoryHeader {
+.categoryStoryHeaderSlider {
   font-weight: bold;
   font-size: 1.25rem; /* Adjust font size as needed */
   text-align: left;
@@ -141,7 +141,7 @@ position: relative;
 }
 
 /* CSS for categoryStoryDescription */
-.categoryStoryDescription {
+.categoryStoryDescriptionSlider {
   font-weight: bold;
   font-size: 0.625rem; /* Adjust as needed */
   color: #ffffff;  
