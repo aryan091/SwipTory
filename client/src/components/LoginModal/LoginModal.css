@@ -1,3 +1,8 @@
+.modal-open {
+  /* Add your desired styles here */
+  overflow: hidden; /* for example, to disable scrolling */
+}
+
 .login-modal {
     position: fixed;
     top: 0;

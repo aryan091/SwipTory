@@ -40,6 +40,7 @@ const LoginModal = ({ closeModal }) => {
 
   useEffect(() => {
 
+    console.log("Login Modal Open")
     document.body.classList.add('modal-open');
     return () => {
 
