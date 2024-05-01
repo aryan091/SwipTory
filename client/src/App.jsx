@@ -101,7 +101,7 @@ function App() {
 
           <Route path='/bookmarks' element={<BookmarkPage />} />
           <Route path='/your-stories' element={<YourStoryPage />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
           
 
 
