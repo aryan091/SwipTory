@@ -9,7 +9,7 @@ const RegisterModal = ({ closeModal }) => {
 
   console.log("Register Modal")
 
-    const [username, setUsername] = useState('');
+    const [name, setName] = useState('');
   const [password, setPassword] = useState('');
   const [statusMessage , setStatusMessage] = useState('')
   const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
@@ -18,7 +18,7 @@ const RegisterModal = ({ closeModal }) => {
         const reqUrl = `${import.meta.env.VITE_BACKEND_URL}/user/register`;
         
         const response = await axios.post(reqUrl, {
-            username,
+            username: name,
             password
         });
         console.log(response.data);
@@ -91,17 +91,19 @@ onClick={closeModal} />
             
         </div>
         
+        <p className='status-message'>{statusMessage}</p>
+
         <div className='modal-button'>
         <button
           id='button-form-register'
           className='button '
           onClick={handleRegister} // Call closeModal to close the modal
         >
-          Login
+          Register
         </button>
         </div>
         
-        <p>{statusMessage}</p>
+        
       </div>
       </div>
     </div>
