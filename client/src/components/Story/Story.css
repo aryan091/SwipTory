@@ -49,6 +49,7 @@ background: linear-gradient(0deg, rgba(73,73,73,1) 0%, rgba(224,224,224,1) 20%, 
     padding-bottom: 4rem/* 64px */;
 
     background-color:rgba(0, 0, 0, 0);
+    margin-bottom: 2.5rem;
 
   }
   
@@ -109,6 +110,6 @@ background: linear-gradient(0deg, rgba(73,73,73,1) 0%, rgba(224,224,224,1) 20%, 
       padding-bottom: 4rem/* 64px */;
   
       background-color:rgba(0, 0, 0, 0);
-      margin-bottom:2rem ;
-  }
+      margin-bottom: 2.5rem;
+    }
 }
