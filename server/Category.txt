@@ -5,3 +5,13 @@ health_and_fitness
 food
 
 On Clicking Share Button - https://swiptory001.netlify.app/view_story/6620b80fc508aaffe142df04
+
+/* Top Stories About food */
+
+position: absolute;
+width: 329.22px;
+height: 28.2px;
+left: calc(50% - 329.22px/2 - 0.58px);
+top: 1065.4px;
+
+background: #000000;

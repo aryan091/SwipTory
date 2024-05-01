@@ -227,8 +227,8 @@ const SliderModal = ({ onClose }) => {
                 style={{
                   cursor: "pointer",
                   color: "white",
-                  width: "1.5rem",
-                  height: "1.5rem",
+                  width: "2rem",
+                  height: "2rem",
                 }}
                 
                 onClick={handleClose}
