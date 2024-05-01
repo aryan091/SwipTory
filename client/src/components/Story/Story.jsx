@@ -46,7 +46,7 @@ const Story = ({ story , openAddStoryModal}) => {
         }}
         onClick={handleStoryClick}
       >
-        <div className="categoryStoryContent ">
+        <div className="categoryStoryContent">
           <div className="categoryStoryHeader ">
             {story.slides[0].heading}
           </div>

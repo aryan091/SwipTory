@@ -60,11 +60,13 @@ background: linear-gradient(0deg, rgba(73,73,73,1) 0%, rgba(224,224,224,1) 20%, 
     text-align: left;
     margin-left: 1rem;
     color: white;
+    font-family: DMSans;
     /* margin-bottom: 1rem; */
   }
   
   .categoryStoryDescription {
     font-weight: bold;
+    font-family: DMSans;
     font-size: 0.75rem/* 12px */;
     line-height: 1rem/* 16px */;
   }
@@ -108,8 +110,22 @@ background: linear-gradient(0deg, rgba(73,73,73,1) 0%, rgba(224,224,224,1) 20%, 
       padding-right: 1rem/* 16px */;
       padding-top: 0px;
       padding-bottom: 4rem/* 64px */;
-  
       background-color:rgba(0, 0, 0, 0);
       margin-bottom: 2.5rem;
     }
+    .categoryStory {
+      width: 23rem; 
+      height: 460px;
+      position: relative;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      /* background-color: #000; */
+  /* background: rgb(73,73,73);*/
+  
+  background: linear-gradient(0deg, rgba(73,73,73,1) 0%, rgba(224,224,224,1) 20%, rgba(255,255,255,1) 100%); 
+    }
+  
 }

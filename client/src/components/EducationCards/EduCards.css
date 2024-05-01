@@ -22,7 +22,7 @@
     justify-content: start;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    gap: 0.25rem; 
+    gap: 0.5rem; 
   }
   
   .offline{
@@ -79,3 +79,38 @@ width: 9rem/* 144px */;
 height: 2.75rem/* 44px */;
 
   }
+
+  @media screen and (max-width: 585px) {
+    .container-heading {
+      text-align: center;
+      font-weight: bold;
+      font-size: 0.8rem; 
+      line-height: 2.25rem; 
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-family: DMSans;
+      text-wrap: balance;
+      
+    }
+
+    .no-story-text{
+      margin-top: 1.25rem/* 20px */;
+      font-weight: 700;
+      font-size: 1.2rem; 
+      line-height: 2.25rem/* 36px */;
+      color: #8e8e8e;
+  
+    }
+    .containerStory {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+
+    .storyContainer {
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+      justify-content: center;
+    }
+
+}
