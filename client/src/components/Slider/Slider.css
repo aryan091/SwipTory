@@ -1,0 +1,231 @@
+      body.modal-open {
+        overflow: hidden;
+      }
+      
+.modal{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background:#000000e6;
+    position: fixed;
+    z-index: 40;
+
+}
+
+.heart-icon{
+  display: flex;
+gap: 0.25rem;
+justify-content: center;
+align-items: center;
+
+}
+  
+  .lower-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 6rem;
+  }
+
+  .translucent-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the opacity (last value) as needed */
+  }
+  
+  .slider-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .card {
+    width: 28rem;
+    height: 38rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 1rem; /* Adjust margin as needed */
+    box-shadow: 0 4px 30px 0 #ffffff40;
+background-color: #000;
+position: relative;
+
+  }
+  
+  .prev-button,
+  .next-button {
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+  .prev-button {
+    margin-right: 9rem; /* Add margin to separate from the card */
+  }
+  
+  .next-button {
+    margin-left: 9rem; /* Add margin to separate from the card */
+  }
+  
+  .card img {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: rgb(73,73,73);
+    background: linear-gradient(0deg, rgba(73,73,73,1) 0%, rgba(224,224,224,1) 20%, rgba(255,255,255,1) 100%);
+    
+  }
+  
+
+  .slider-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card {
+    position: relative;
+  }
+  
+  .progress-bar-container {
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Add space between progress bars */
+    margin-top: 10px; /* Adjust top margin to add space between progress bars */
+  }
+  
+  .progress-bar-segment {
+    flex: 1;
+    height: 4px;
+    background: rgba(217, 217, 217, 0.5); /* Change color and styles as needed */
+    transition: width 0.5s; /* Add transition for smooth width change */
+    margin-right: 10px; /* Adjust right margin to add space between progress bars */
+  }
+  
+  .progress-bar-segment.active {
+    background: #ffffff; /* Change color for active segment */
+    transition: width 0.5s; /* Add transition for smooth width change */
+  }
+  
+  /* CSS for categoryStoryContent */
+.categoryStoryContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center; /* Center the content horizontally */
+  padding: 16px; /* Adjust padding as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+}
+
+/* CSS for categoryStoryHeader */
+.categoryStoryHeader {
+  font-weight: bold;
+  font-size: 1.25rem; /* Adjust font size as needed */
+  text-align: left;
+  margin-left: 1rem;
+  color: #ffffff;
+}
+
+/* CSS for categoryStoryDescription */
+.categoryStoryDescription {
+  font-weight: bold;
+  font-size: 0.625rem; /* Adjust as needed */
+  color: #ffffff;  
+  text-align: left;
+  margin-left: 1rem;
+
+}
+
+
+
+.close-icon{
+  display: flex;
+  margin-right: 8rem;
+}
+
+.share-icon{
+  display: flex;
+  margin-left: 8rem;
+}
+
+.icons {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  width: auto;
+  height: 1.25rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  position: absolute;
+}
+
+
+
+.bookmark-icon,
+.like-icon
+ {
+  width: 1.25rem;
+  height: 1.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.total-likes{
+  color: #ffffff;
+  font-size: 0.75rem/* 12px */;
+  line-height: 1rem/* 16px */;
+
+}
+
+@media screen and (max-width: 585px) {
+  .slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    width: 100vw; 
+    overflow: hidden; 
+  }
+
+  .card {
+    width: 100%; 
+    max-width: 100%; 
+    height: 100vh; 
+    margin: 0 auto; 
+    overflow: hidden; 
+  }
+
+  .prev-button,
+  .next-button {
+    display: none; 
+  }
+  .icons {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    width: auto;
+    height: 1.25rem;
+    padding-right: 1rem;
+    padding-left: 3rem;
+    position: absolute;
+  }
+}

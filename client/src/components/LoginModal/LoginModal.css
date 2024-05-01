@@ -1,0 +1,133 @@
+.login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0px;
+
+    z-index: 20; 
+  }
+  
+  .login-modal-content {
+    background-color: #ffffff;
+    padding: 7rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 624px;
+    height: 482px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .modal-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .login-modal-text{
+    margin-bottom: 1rem/* 16px */;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .modal-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+
+  }
+
+  .field-value {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 1rem;
+    gap: 4rem;
+  }
+  
+  label {
+    margin-right: 1rem;
+    font-weight: bold;
+    flex: 1; 
+    text-align: right; 
+  }
+  
+  .input-field {
+    flex: 1; 
+    height: 2.2rem;
+    padding: 0.5rem;
+    border: 2px solid #000000;
+    border-radius: 0.25rem;
+  }
+  
+  .button {
+    width: 8rem; /* Adjust button width */
+    height: 3rem; /* Adjust button height */
+    padding: 0.5rem ;
+    margin-left: 1rem/* 16px */;
+    margin-right: 1rem/* 16px */;
+    background: #73ABFF;
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+
+  }
+  
+  
+  
+  .status-message {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+
+  @media screen and (max-width: 585px) {
+
+    .login-modal-content {
+      background-color: #ffffff;
+      padding: 7rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 257px;
+      height: 482px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      position: relative;    }
+
+
+  .login-modal-text{
+    font-size: 1.125rem;
+text-wrap: nowrap;
+
+  }
+
+  .field-value {
+    display: flex;
+margin-bottom: 1rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 0;
+  }
+
+
+
+  }
+  

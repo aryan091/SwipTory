@@ -1,0 +1,7 @@
+education
+movies
+travel
+health_and_fitness
+food
+
+On Clicking Share Button - https://swiptory001.netlify.app/view_story/6620b80fc508aaffe142df04

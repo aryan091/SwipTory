@@ -1,0 +1,200 @@
+.container {
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  background:#000000e6;
+  position: fixed;
+  z-index: 35; /* Ensure the modal is on top of other content */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.add-story-open {
+  overflow: hidden; /* Prevent scrolling */
+}
+
+
+.modal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background:#000000e6;
+    position: fixed;
+    z-index: 100;
+    /* background-color: rgba(255, 255, 255, 0.1); Adjust the opacity (last value) as needed */
+
+}
+.add-story{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 38.625rem;
+    height: 32rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px 0px #FFFFFF40;
+    position: relative;
+    border-radius: 1.5rem/* 24px */;
+
+}
+
+.slide{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+
+
+}
+
+.slide-button-div {
+    width: 5rem;
+    height: 4rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); /* Adjust shadow as needed */
+    border-radius: 10px; /* Adjust border radius as needed */
+    text-align: center;
+    font-weight: bold;
+  }
+  
+
+.slide-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between; /* Adjusted to space between */
+  align-items: center;
+  padding: 2rem;
+}
+
+.slide-buttons > div {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.slide-buttons-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between; /* Adjusted to space between */
+    align-items: center;
+    padding: 1rem 0;
+  }
+  
+  .slide-buttons-actions > div {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+.form-values{
+    display: flex;
+    flex-direction: row; /* Adjusted to row */
+    align-items: center;
+    justify-content: space-between; /* Adjusted to space between */
+    width: 100%;
+}
+
+
+.form-values input,
+.form-values select {
+    width: 17rem;
+    height: 2.5rem;
+    padding-left: 0.5rem; /* Adjust as needed */
+    padding-right: 0.5rem; /* Adjust as needed */
+    font-weight: bold;
+    border: 1px solid #000000;
+  
+    /* Add any additional styling here */
+}
+
+.form-values textarea{
+    width: 17rem;
+    height: 6.5rem;
+    padding-left: 0.5rem; /* Adjust as needed */
+    padding-right: 0.5rem; /* Adjust as needed */
+    font-weight: bold;
+    border: 1px solid #000000;
+}
+select:focus + label {
+    margin-top: 0.5rem; /* Adjust the margin-top to create the desired gap */
+  }
+  
+  .previous-btn,
+  .add-next-btn,
+  .submit-btn {
+      cursor: pointer;
+      /* display: flex; */
+      width:6.5rem;
+      height: 2.25rem;
+      border-radius: 2rem;
+      background: #7EFF73;
+      align-items: center;
+      color: #FFF;
+      text-align: center;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+  }  
+
+  .submit-btn{
+    display: flex;
+    justify-content: center;
+    background: #FF7373;
+
+  }
+
+  .formy{
+    width: 80%;
+  }
+
+  .add-next-btn{
+    background: #73ABFF;
+
+  }
+
+
+
+  .action-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  }
+
+    input{
+      border: 1px solid #000000;
+    }
+
+    option{
+      font-weight: 700;
+
+    }
+
+    .error-message{
+      font-size: smaller;
+      color: red;
+    }
+
+    .offline{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      font-size: 1.875rem/* 30px */;
+      line-height: 2.25rem/* 36px */;
+  
+    }
+
+    .slide-buuton-div{
+      width: 4rem;
+      height: 3rem;
+      box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.25);
+      border-radius: 0.5rem;
+      text-align: center;
+      font-weight: bold;
+    }

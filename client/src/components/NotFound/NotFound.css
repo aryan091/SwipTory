@@ -1,0 +1,43 @@
+.notFound {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .notFoundBtn{
+    position: absolute;
+    bottom: 8rem;
+    width: 11rem; /* Adjust button width */
+    height: 3rem; /* Adjust button height */
+    padding: 0.5rem ;
+    margin-left: 1rem/* 16px */;
+    margin-right: 1rem/* 16px */;
+    background: #73ABFF;
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .notFound-heading-text {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin-left: 3rem;
+    cursor: pointer;
+    top: 5rem;
+    left: 41rem;
+  }

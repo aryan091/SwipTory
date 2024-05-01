@@ -1,0 +1,86 @@
+.filter-card-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  gap: 1rem;
+  overflow-x: hidden; 
+}
+
+.filter-card {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 1.5rem;
+}
+
+.filter-card.selected {
+  border: 10px solid #3182ce; /* Blue color */
+}
+
+.filter-card img {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.filter-card-text-area {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-card-text {
+  font-weight: bold;
+  font-size: 1.875rem; /* Equivalent to text-sm in Tailwind */
+  color: #ffffff; /* White color */
+  text-wrap: wrap;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+}
+
+/* Media query for screens with a maximum width of 576px (mobile devices) */
+@media (max-width: 575.98px) {
+
+  .filter-card-list {
+    justify-content: flex-start; /* Align items to the start */
+    overflow-x: hidden; 
+    white-space: nowrap; 
+  }
+
+
+  .filter-card {
+    width: 9rem;
+    height: 6rem;
+    flex-shrink: 0;
+
+  }
+  .filter-card-text
+  {
+    font-size: 0.875rem;
+  }
+}
+
+.offline{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-size: 1.875rem/* 30px */;
+  line-height: 2.25rem/* 36px */;
+
+}
