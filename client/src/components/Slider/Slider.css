@@ -228,4 +228,16 @@ position: relative;
     padding-left: 3rem;
     position: absolute;
   }
+
+  .progress-bar-container {
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    display: flex;
+    justify-content: space-between; /* Add space between progress bars */
+    margin-top: 10px; /* Adjust top margin to add space between progress bars */
+  }
+
 }
