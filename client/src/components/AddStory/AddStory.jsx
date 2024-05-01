@@ -148,7 +148,7 @@ const AddStory = ({closeModal}) => {
 
   return (
     <div className='container'>
-<div className='add-story modal-content '>
+<div className='add-story  '>
 <IoMdCloseCircleOutline style={{ position: 'absolute', top: '1rem', right: '1rem', cursor: 'pointer', fontSize: '1.5rem', color: 'red' }}
 onClick={closeModal} />
 
@@ -251,17 +251,17 @@ onClick={closeModal} />
         <div className='action-button ' >
           <div className='slide-buttons-actions'>
             <div className='previous-btn'>
-            <button  type="button" onClick={handlePrevSlide} disabled={activeSlideIndex === 0}>Previous</button>
+            <button  className='prev' type="button" onClick={handlePrevSlide} disabled={activeSlideIndex === 0}>Previous</button>
 
             </div>
             <div className='add-next-btn'>
-            <button  type="button" onClick={handleNextSlide} disabled={activeSlideIndex === slides.length - 1}>Next</button>
+            <button className='next' type="button" onClick={handleNextSlide} disabled={activeSlideIndex === slides.length - 1}>Next</button>
 
             </div>
           </div>
 
           <div className='submit-btn'>
-            <button  type="submit">
+            <button className='submit' type="submit"> 
             {state?.edit ? "Edit" : "Post"}
 
             </button>

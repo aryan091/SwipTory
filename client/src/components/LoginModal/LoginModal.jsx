@@ -97,6 +97,9 @@ onClick={closeModal} />
             
         </div>
         
+        <p className='status-message'>{statusMessage}</p>
+
+
         <div className='modal-button'>
         <button
           id='button-form-register'
@@ -107,7 +110,6 @@ onClick={closeModal} />
         </button>
         </div>
         
-        <p>{statusMessage}</p>
       </div>
       </div>
     </div>

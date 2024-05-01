@@ -15,6 +15,7 @@
   line-height: 2.25rem;
   margin-left: 3rem;
   cursor: pointer;
+  font-family: DMSans;
 }
 .button-place{
   display: flex;
