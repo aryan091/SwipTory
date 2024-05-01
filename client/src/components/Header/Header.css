@@ -21,6 +21,11 @@
   display: flex;
   /* gap: 0.5rem 16px; */
 }
+
+.book-button{
+  display: flex;
+}
+
 .button {
   width: 8rem;
   height: 3rem;
@@ -50,6 +55,9 @@
 
 #button-bookmark {
   background: #ff7373;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-class {
@@ -107,7 +115,6 @@
   right: 0px;
   margin-top: 4rem /* 64px */;
   background-color: white;
-  padding: 1rem;
   border-radius: 0.25rem /* 4px */;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);

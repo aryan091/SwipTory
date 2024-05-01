@@ -10,6 +10,7 @@ import HamforHeader from "../../assets/HamForHeader.png"
 import AddStory from '../AddStory/AddStory';
 import "./Header.css"
 import { IoMdClose } from "react-icons/io";
+import { FaBookmark } from "react-icons/fa";
 
 
 const Header = ({openAddStoryModal}) => {
@@ -179,13 +180,25 @@ const Header = ({openAddStoryModal}) => {
             >
               Add Story
             </button>
-            <button
+            <div className='book-button'>
+<button
               id='button-bookmark'
               className='button '
               onClick={handleBookmarkClick}
             >
+                      <FaBookmark
+          className="bookmark-icon"
+          style={{
+            color: "white",
+            cursor: "pointer",
+            width: '1.5rem',
+            height: '1.5rem'
+          }}
+        />
+
               Bookmark
             </button>
+</div>
 
           <div>
           <button onClick={handleLogout}
@@ -206,19 +219,35 @@ const Header = ({openAddStoryModal}) => {
         {!isMobile && isUserLoggedIn && (
 
           <div className='all-item-pc '>
+
+<div className='book-button'>
+<button
+              id='button-bookmark'
+              className='button '
+              onClick={handleBookmarkClick}
+            >
+                      <FaBookmark
+          className="bookmark-icon"
+          style={{
+            color: "white",
+            cursor: "pointer",
+            width: '1.5rem',
+            height: '1.5rem'
+          }}
+        />
+
+              Bookmark
+            </button>
+</div>
+                
+
+
             <button
               id='button-add-story'
               className='button '
               onClick={handleAddStoryClick}
             >
               Add Story
-            </button>
-            <button
-              id='button-bookmark'
-              className='button '
-              onClick={handleBookmarkClick}
-            >
-              Bookmark
             </button>
             <div className='icon-class'>
               <img src={Avatar} alt="Avatar" />

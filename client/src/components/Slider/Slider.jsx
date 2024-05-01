@@ -164,7 +164,7 @@ const SliderModal = ({ onClose }) => {
         setCurrentImageIndex((prevIndex) =>
           prevIndex === currentStorySlides.length - 1 ? prevIndex : prevIndex + 1
         );
-      }, 10000);
+      }, 5000);
       setAutoSlideTimer(interval);
     }
   };

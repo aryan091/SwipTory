@@ -240,4 +240,9 @@ position: relative;
     margin-top: 10px; /* Adjust top margin to add space between progress bars */
   }
 
+  .share-icon{
+    display: flex;
+    margin-left: 8rem;
+  }
+
 }
