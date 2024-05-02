@@ -40,6 +40,8 @@ const Story = ({ story , openAddStoryModal}) => {
     );
   }
 
+  
+
   return (
     <div className="wrapper">
       <div
@@ -50,6 +52,7 @@ const Story = ({ story , openAddStoryModal}) => {
           backgroundPosition: "center",
         }}
         onClick={handleStoryClick}
+  
       >
         <div className="categoryStoryContent">
           <div className="categoryStoryHeader">
