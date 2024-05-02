@@ -35,6 +35,11 @@ app.get('/api/health', (req, res) => {
 })
 })
 
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'path/to/index.html'));
+});
+
+
 app.listen(port, () => {
   mongoose.connect(process.env.MONGODB_URL)
   .then(() => console.log(`Server is up on ${process.env.PORT} :)`))

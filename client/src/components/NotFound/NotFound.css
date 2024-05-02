@@ -41,3 +41,22 @@
     top: 5rem;
     left: 41rem;
   }
+
+  @media screen and (max-width: 585px) {
+
+    .notFound-heading-text {
+      position: absolute;
+      font-weight: bold;
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+      margin-left: 3rem;
+      cursor: pointer;
+      top: 5rem;
+      left: 5rem;
+    }
+
+    .notFoundImg{
+      width: webkit-fill-available;
+    }
+
+  }

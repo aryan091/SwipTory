@@ -1,0 +1,13 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/(.*)",
+        "destination": "http://localhost:3000/api/$1"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "https://aryandaftari7-gmail-com-cuvette-final-evaluation-october.vercel.app/index.html"
+      }
+    ]
+  }
+  
