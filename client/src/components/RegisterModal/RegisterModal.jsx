@@ -5,6 +5,24 @@ import { IoMdCloseCircleOutline } from "react-icons/io";
 import { toast } from 'react-toastify';
 import { GoEye } from "react-icons/go";
 import "./RegisterModal.css"
+import { PropagateLoader } from 'react-spinners'; // Import the spinner component
+
+
+
+
+const loadingSpinnerStyles = {
+  position: "fixed",
+  top: 0,
+  left: 0,
+  width: "100vw",
+  height: "100vh",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  zIndex: 9999,
+  backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  transform:"none"
+}
 const RegisterModal = ({ closeModal }) => {
 
   console.log("Register Modal")
@@ -12,8 +30,11 @@ const RegisterModal = ({ closeModal }) => {
     const [name, setName] = useState('');
   const [password, setPassword] = useState('');
   const [statusMessage , setStatusMessage] = useState('')
+  const [loading, setLoading] = useState(false); // Loading state
+
   const [showPassword, setShowPassword] = useState(false); // State to toggle password visibility
   const handleRegister = async () => {
+    setLoading(true);
     try {
         const reqUrl = `${import.meta.env.VITE_BACKEND_URL}/user/register`;
         
@@ -30,6 +51,9 @@ const RegisterModal = ({ closeModal }) => {
         return response.data ;
     } catch (error) {
         setStatusMessage(error.response.data.message)
+    }
+    finally {
+        setLoading(false); // Set loading back to false when API call completes
     }
   }
 
@@ -101,6 +125,10 @@ onClick={closeModal} />
         >
           Register
         </button>
+        {loading && <PropagateLoader color="#000000" 
+                      cssOverride={loadingSpinnerStyles}
+                      />} {/* Show spinner only when loading */}
+
         </div>
         
         

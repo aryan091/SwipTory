@@ -110,7 +110,7 @@ const getAllStories = asyncHandler(async (req, res) => {
         // If category is 'all', fetch all stories
         if (category === 'all') {
             // Fetch all stories from the database
-            const allStories = await Story.find();
+            const allStories = await Story.find().sort({ createdAt: -1 });
 
             // Respond with all stories
             return res.status(200).json(
@@ -157,7 +157,8 @@ const getStoriesByCategory = asyncHandler(async (req, res) => {
         const category = req.params.category;
 
         // Fetch stories based on the category from the database
-        const storiesByCategory = await Story.find({ "slides.category": category });
+        const storiesByCategory = await Story.find({ "slides.category": category }).sort({ createdAt: -1 }); // Sort by createdAt field in descending order
+
         // Respond with stories filtered by category
         return res.status(200).json(
             new ApiResponse(

@@ -67,7 +67,9 @@ const SliderModal = ({ onClose }) => {
       const response = await axios.post(url);
       setIsLiked(response.data.data.liked);
       setTotalLikes(response.data.data.totalLikes);   
-      toast.success('Story Liked Successfully!')
+
+      (isLiked) ?   toast.success('Story Liked Successfully!') : toast.success('Story Unliked Successfully!')
+
     } catch (error) {
       throw new Error("Failed to get like ");
     }
