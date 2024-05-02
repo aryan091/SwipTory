@@ -68,7 +68,7 @@ const SliderModal = ({ onClose }) => {
       setIsLiked(response.data.data.liked);
       setTotalLikes(response.data.data.totalLikes);   
 
-      (isLiked) ?   toast.success('Story Liked Successfully!') : toast.success('Story Unliked Successfully!')
+      (isLiked) ?   toast.success('Story Unliked Successfully!') : toast.success('Story Liked Successfully!')
 
     } catch (error) {
       throw new Error("Failed to get like ");
