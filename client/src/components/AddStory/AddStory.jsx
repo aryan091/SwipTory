@@ -15,7 +15,7 @@ const categories = ["education", "health_and_fitness", "travel", "food", "movies
 const AddStory = ({closeModal}) => {
 
   console.log("In AddStory")
-  const {onlineStatus} = useContext(AppContext)
+  
 
 
   const [slides, setSlides] = useState([
@@ -125,7 +125,10 @@ const AddStory = ({closeModal}) => {
 
       }
 
+
+
       fetchData();
+      selectedCategory && setSelectedCategory(selectedCategory);
   
       closeModal();
     } catch (error) {

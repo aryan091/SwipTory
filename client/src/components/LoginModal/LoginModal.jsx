@@ -32,6 +32,8 @@ const LoginModal = ({ closeModal }) => {
       
       toast.success(`Welcome ${response.data.message.user.username}!`);
 
+      
+
       closeModal();
     } catch (error) {
       setStatusMessage(error.response.data.message);
