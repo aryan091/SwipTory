@@ -135,13 +135,7 @@ const AddStory = ({closeModal}) => {
     console.log('Story data:', slides);
   };
   
-  if(!onlineStatus){
-    return (
-      <div className='offline'>
-        <h1>🔴 Looks like you are Offline. Kindly Check Your Internet Connection</h1>
-        </div>
-    )
-  }
+
 
   
 

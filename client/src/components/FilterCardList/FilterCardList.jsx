@@ -13,15 +13,8 @@ import FoodImage from '../../assets/food.jpg';
 
 
 const FilterCardList = () => {
-  const { handleFilterSelect, selectedCategory , onlineStatus } = useContext(AppContext);
+  const { handleFilterSelect, selectedCategory } = useContext(AppContext);
 
-  if(!onlineStatus){
-    return (
-      <div className='offline'>
-        <h1>🔴 Looks like you are Offline. Kindly Check Your Internet Connection</h1>
-        </div>
-    )
-  }
 
 
   return (

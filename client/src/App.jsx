@@ -1,7 +1,7 @@
 //App.jsx
 import React, { useState, useEffect, createContext, useContext } from 'react';
 import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
-import axios from 'axios'; // Import axios for HTTP requests
+import axios from 'axios'; 
 import AppContext from './context/AppContext';
 import { getStoriesByCategory } from './apis/getStoryByCategory';
 import { FILTERS_MAPPING } from './utils/constants';
@@ -56,7 +56,6 @@ function App() {
 
   const handleFilterSelect = async (filterKey) => {
     if (filterKey === "All") {
-      // Fetch data for all categories sequentially
       const allCategoriesData = {};
       try {
         const categories = ["education", "health_and_fitness", "travel", "food", "movies"];
@@ -70,7 +69,6 @@ function App() {
         console.error("Error fetching stories:", error);
       }
     } else {
-      // Fetch data for the selected category
       const category = FILTERS_MAPPING[filterKey];
       try {
         const stories = await getStoriesByCategory(category);
@@ -87,7 +85,7 @@ function App() {
 
   return (
     <Router>
-    <UserContextProvider> {/* Wrap your entire app with UserConteaxtProvider */}
+    <UserContextProvider>
     <StoryProvider> 
 
       <AppContext.Provider value={{ storiesByCategory, selectedCategory, handleFilterSelect, storyClicked, setStoryClicked , fetchData , onlineStatus , YourStories }}>

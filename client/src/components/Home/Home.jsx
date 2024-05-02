@@ -86,7 +86,7 @@ const Home = () => {
     if (location.pathname === '/add-story') {
       setIsAddStoryModalOpen(true);
     } else {
-      setIsAddStoryModalOpen(false); // Close the modal when navigating away from /add-story
+      setIsAddStoryModalOpen(false); 
     }
   }, [location.pathname]);
 
