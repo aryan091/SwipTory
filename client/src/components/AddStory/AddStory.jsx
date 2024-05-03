@@ -29,7 +29,7 @@ const categories = ["education", "health_and_fitness", "travel", "food", "movies
 
 const AddStory = ({ closeModal }) => {
   console.log("In AddStory");
-  const { onlineStatus } = useContext(AppContext);
+  const { onlineStatus , setSelectedCategory } = useContext(AppContext);
   const [slides, setSlides] = useState([
     { heading: '', description: '', imageUrl: '', category: '' },
     { heading: '', description: '', imageUrl: '', category: '' },
@@ -38,7 +38,7 @@ const AddStory = ({ closeModal }) => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const { state } = useLocation();
   const { fetchData } = useContext(AppContext);
-  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedCategoryVal, setSelectedCategoryVal] = useState('');
   const [categoryError, setCategoryError] = useState('');
   const [loading, setLoading] = useState(false); // Step 2: Define loading state
 
@@ -46,7 +46,7 @@ const AddStory = ({ closeModal }) => {
     if (state && state.story) {
       const receivedStory = state.story;
       setSlides(receivedStory.slides);
-      setSelectedCategory(receivedStory.slides[0].category);
+      setSelectedCategoryVal(receivedStory.slides[0].category);
     }
   }, [state]);
 
@@ -61,7 +61,7 @@ const AddStory = ({ closeModal }) => {
   };
 
   const handleCategoryChange = (value) => {
-    setSelectedCategory(value);
+    setSelectedCategoryVal(value);
     setSlides(slides.map(slide => ({ ...slide, category: value })));
     setCategoryError('');
   };
@@ -80,7 +80,7 @@ const AddStory = ({ closeModal }) => {
 
   const handleAddSlide = () => {
     if (slides.length < 6) {
-      setSlides([...slides, { heading: '', description: '', imageUrl: '', category: selectedCategory }]);
+      setSlides([...slides, { heading: '', description: '', imageUrl: '', category: selectedCategoryVal }]);
       setActiveSlideIndex(slides.length);
     }
   };
@@ -119,11 +119,15 @@ const AddStory = ({ closeModal }) => {
       console.log(state?.edit ? "Post updated successfully:" : "Story created successfully:", response.data);
       toast.success(state?.edit ? 'Story Updated Successfully!' : 'Story Created Successfully!');
       fetchData();
+
       closeModal();
+
     } catch (error) {
       setCategoryError(error.response.data.message);
     } finally {
-      setLoading(false); // Step 3: Set loading to false when operation completes
+
+      setLoading(false); 
+
     }
 
     console.log('Story data:', slides);
@@ -172,7 +176,7 @@ const AddStory = ({ closeModal }) => {
                 </div>
                 <div className='form-values'>
                   <label htmlFor="category">Category</label>
-                  <select id="category" value={selectedCategory} onChange={(event) => handleCategoryChange(event.target.value)}>
+                  <select id="category" value={selectedCategoryVal} onChange={(event) => handleCategoryChange(event.target.value)}>
                     <option value="" disabled hidden>Select Category</option>
                     {Object.entries(FILTERS_MAPPING).map(([key, value]) => (
                       categories.includes(value) && (
