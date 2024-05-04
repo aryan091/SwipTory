@@ -64,7 +64,8 @@ export const StoryProvider = ({ children }) => {
         totalLikes, 
         setTotalLikes,
         isBookmarked,
-        setIsBookmarked
+        setIsBookmarked,
+        storyId
       }}
     >
       {children}

@@ -10,6 +10,7 @@ import axios from 'axios';
 import EduCards from '../EducationCards/EduCards';
 import AppContext from '../../context/AppContext';
 import LoginModal from '../LoginModal/LoginModal';
+import { StoryContext } from '../../context/StoryContext';
 import { HashLoader } from "react-spinners";
 
 const loadingSpinnerStyles = {
@@ -34,7 +35,8 @@ const Home = () => {
   const [userStories, setUserStories] = useState([]);
   const { isUserLoggedIn } = useContext(UserContext);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 576);
-  const [loading, setLoading] = useState(false); // State to manage loading status
+  const [loading, setLoading] = useState(false); 
+  const {fetchStoryById} = useContext(StoryContext)
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -74,11 +76,15 @@ const Home = () => {
 
   useEffect(() => {
     if (storyId) {
+      fetchStoryById(storyId);
+
       setIsModalOpen(true);
     } else {
       setIsModalOpen(false);
     }
   }, [storyId]);
+
+
 
   useEffect(() => {
     if (isUserLoggedIn) {
@@ -116,6 +122,8 @@ const Home = () => {
       setShowModalLogin(false);
     }
   }, [location.pathname]);
+
+
 
   return (
     <div>

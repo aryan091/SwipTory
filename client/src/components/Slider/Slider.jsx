@@ -121,7 +121,7 @@ const SliderModal = ({ onClose }) => {
   };
   
   useEffect(() => {
-    if (storyId && userId) {
+    if (storyId ) {
       fetchStoryById(storyId);
     }
   }, [storyId, userId], isBookmarked);
