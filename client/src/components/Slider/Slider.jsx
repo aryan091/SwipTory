@@ -130,6 +130,7 @@ const SliderModal = ({ onClose }) => {
   const navigate = useNavigate();
 
   const handleClose = () => {
+    setCurrentStorySlides(null)
     navigate("/");
     onClose();
   };

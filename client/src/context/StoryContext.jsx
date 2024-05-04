@@ -65,6 +65,7 @@ export const StoryProvider = ({ children }) => {
         setTotalLikes,
         isBookmarked,
         setIsBookmarked,
+        setCurrentStorySlides,
         storyId
       }}
     >
