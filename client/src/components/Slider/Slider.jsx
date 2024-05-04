@@ -40,6 +40,8 @@ const SliderModal = ({ onClose }) => {
   const [autoSlideTimer, setAutoSlideTimer] = useState(null);
 
   const { storyId } = useParams();
+
+  console.log("In slider ",storyId)
   const { currentStorySlides , isLiked , setIsLiked , totalLikes , setTotalLikes , fetchStoryById , isBookmarked , setIsBookmarked } = useContext(StoryContext);
   const { id: userId } = useContext(UserContext);
   
