@@ -23,6 +23,7 @@ export const StoryProvider = ({ children }) => {
 
   const fetchStoryById = async (id) => {
     try {
+      console.log("In story context",id);
       const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/story/view-story/${id}`);
       console.log(" In story context",response.data.data);
       setStories(response.data.data.story);
