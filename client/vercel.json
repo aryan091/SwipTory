@@ -6,7 +6,7 @@
     },
     {
       "source": "/view-story/(.*)",
-      "destination": "/view-story.html"
+      "destination": "/index.html"
     },
     {
       "source": "/(.*)",
@@ -14,4 +14,3 @@
     }
   ]
 }
-  
