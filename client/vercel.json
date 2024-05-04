@@ -6,7 +6,7 @@
     },
     {
       "source": "/view-story/(.*)",
-      "destination": "https://aryandaftari7-gmail-com-cuvette-final-evaluation-october.vercel.app/api/$1"
+      "destination": "https://aryandaftari7-gmail-com-cuvette-final-evaluation-october.vercel.app/view-story/$1"
     },
     {
       "source": "/(.*)",
