@@ -170,7 +170,7 @@ const SliderModal = ({ onClose }) => {
         setCurrentImageIndex((prevIndex) =>
           prevIndex === currentStorySlides.length - 1 ? prevIndex : prevIndex + 1
         );
-      }, 5000);
+      }, 3000);
       setAutoSlideTimer(interval);
     }
   };
@@ -195,7 +195,7 @@ const SliderModal = ({ onClose }) => {
         setCurrentImageIndex((prevIndex) =>
           prevIndex === currentStorySlides.length - 1 ? prevIndex : prevIndex + 1
         );
-      }, 5000);
+      }, 3000);
       setAutoSlideTimer(interval);
     }
   };
