@@ -42,7 +42,7 @@ const SliderModal = ({ onClose }) => {
   const { storyId } = useParams();
 
   console.log("In slider ",storyId)
-  const { currentStorySlides , isLiked , setIsLiked , totalLikes , setTotalLikes , fetchStoryById , isBookmarked , setIsBookmarked } = useContext(StoryContext);
+  const { currentStorySlides , setCurrentStorySlides , isLiked , setIsLiked , totalLikes , setTotalLikes , fetchStoryById , isBookmarked , setIsBookmarked } = useContext(StoryContext);
   const { id: userId } = useContext(UserContext);
   
   const handleShare = () => {
@@ -131,8 +131,8 @@ const SliderModal = ({ onClose }) => {
 
   const handleClose = () => {
     navigate("/");
-    setCurrentStorySlides(null)
-
+    currentImageIndex === 0 ? onClose() : setCurrentImageIndex(0);
+    setCurrentStorySlides(null);
     onClose();
   };
 
