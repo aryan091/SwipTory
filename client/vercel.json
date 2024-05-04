@@ -1,13 +1,17 @@
 {
-    "rewrites": [
-      {
-        "source": "/api/(.*)",
-        "destination": "https://aryandaftari7-gmail-com-cuvette-final-evaluation-october.vercel.app/api/$1"
-      },
-      {
-        "source": "/(.*)",
-        "destination": "/index.html"
-      }
-    ]
-  }
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://aryandaftari7-gmail-com-cuvette-final-evaluation-october.vercel.app/api/$1"
+    },
+    {
+      "source": "/view-story/(.*)",
+      "destination": "/view-story.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
   
