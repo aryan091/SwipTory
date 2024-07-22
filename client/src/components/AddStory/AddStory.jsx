@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import  { useState, useEffect, useContext } from 'react';
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import "./AddStory.css";
